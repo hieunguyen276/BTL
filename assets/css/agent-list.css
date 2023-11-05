@@ -1,0 +1,16 @@
+
+
+#our-agent {
+    padding: 0;
+}
+
+.our-agent__slider {
+    flex-wrap: wrap;
+}
+
+
+.our-agent__item {
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-bottom: 30px;
+}

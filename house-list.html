@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LemanHouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/house-list.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+</head>
+<body>
+    <div id="main">
+        <header>
+            <!-- header_topbar -->
+            <div id="header_topbar">
+                <div class="container">
+                    <div class="row topbar-layout">
+                        <div class="col-xs-6 col-sm-4">
+                            <div class="topbar-time">
+                                Mon - Sat: 08.00 AM - 18.00 PM
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-8">
+                            <div class="topbar-list">
+                                <ul class="topbar-list__item">
+                                    <li>
+                                        <ul class="topbar-list__social">
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa-brands fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="fa-brands fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <button class="topbar__currency">
+                                            USD ($)
+                                        </button>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </li>
+                                    <li>
+                                        <button class="topbar__language">
+                                            English
+                                        </button>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   
+            <!-- headerHolder -->
+            <div id="headerHolder">
+                <div class="container">
+                    <div class="row headerHolder">
+                        <div class="col-xs-6 col-sm-3">
+                            <a href="home.html">
+                                <img class="logo__img" src="./assets/img/logo.png" alt="LemanHouse">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-9">
+                            <div class="header-contact__list">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="icon-phone fa-solid fa-phone-volume"></i>
+                                        </a>
+                                        <div class="header-contact__info">
+                                            <span>+ 1246-345-0695</span>
+                                            <span>info@homesweet.com</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="">
+                                            <i class="icon-place fa-solid fa-location-dot"></i>
+                                        </a>
+                                        <span>
+                                            PO Box 16122 Collins Street West 
+                                            <br>
+                                            Victoria 8007 Australia
+                                        </span>
+                                    </li>
+
+                                    <li>
+                                        <div class="header-contact__search">
+                                            <i class="icon-search fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- header__navbar -->
+                    <div id="header__navbar">
+                        <div class="header__navbar-content">
+                            <div class="header__navbar-item">
+                                <ul>
+                                    <li>
+                                        <a class="menu-parent" href="">
+                                            Home
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="subnav-home">
+                                            <li><a href="home.html">Home page 1</a></li>
+                                            <li><a href="home.html">Home page 2</a></li>
+                                            <li><a href="house-list.html">House list 1</a></li>
+                                            <li><a href="house-list.html">House list 2</a></li>
+                                            <li><a href="house-list.html">House list 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Agent
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="subnav-pro">
+                                            <li><a href="agent-list.html">Agent list</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li><li>
+                                                <a href="agent-list.html">Agent list</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            About
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="subnav-page">
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Blog
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="subnav-blog">
+                                            <li><a href="blog.html">Blog 1</a></li>
+                                            <li><a href="blog.html">Blog 2</a></li>
+                                            <li><a href="blog.html">Blog 3</a></li>
+                                            <li><a href="blog.html">Blog 4</a></li>
+                                            <li><a href="blog.html">Blog 5</a></li>
+                                            <li><a href="blog.html">Blog 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="header__navbar-user">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-user"></i>
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-pencil"></i>
+                                            Register
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div> 
+                            
+                        </div>
+                        <div class="box-sub">
+                            <a href="">
+                                <i class="fa-solid fa-plus"></i>
+                                SUBMIT PROPERTY
+                            </a>
+                        </div>
+
+                    </div>
+                        
+                </div>
+            </div>
+                    
+        </header>
+
+        <section id="header_nav-search">  
+            <div class="header__nav-search">   
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-5">
+                            <div class="form-gr">
+                                <input type="text" class="form-control" placeholder="Enter address..."> 
+                            </div>
+                        </div>
+    
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <div class="form-gr">
+                                <input type="text" class="form-control" placeholder="All Cities..."> 
+                            </div>
+                        </div>
+    
+                        <div class="col-xs-12 col-sm-3 col-md-2">
+                            <div class="form-gr">
+                                <select class="form-single-d" name="" id="" data-placeholder="All Areas">
+                                    <option value="1">All Areas</option>
+                                    <option value="1">All Areas</option>
+                                    <option value="1">All Areas</option>
+                                    <option value="1">All Areas</option>
+                                    <option value="1">All Areas</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="col-xs-12 col-md-4 col-lg-3">
+                            <div class="search-box">
+                                <div class="other-feature__content">
+                                    <div class="other-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span>Advanced</span>
+                                    
+                                </div>
+                                
+                                    <button class="other-search-s">
+                                        <h4>SEARCH</h4>
+                                    </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="other-feature__collapse">
+                            <ul>
+                                <li><input type="checkbox" name="" id="">Air conditioning</li>
+                                <li><input type="checkbox" name="" id="">Balcony</li>
+                                <li><input type="checkbox" name="" id="">Bedding</li>
+                                <li><input type="checkbox" name="" id="">Cable TV</li>
+                                <li><input type="checkbox" name="" id="">Cleaning after exit</li>
+                                <li><input type="checkbox" name="" id="">Cofee pot</li>
+                                <li><input type="checkbox" name="" id="">Computer</li>
+                                <li><input type="checkbox" name="" id="">Cot</li>
+                                <li><input type="checkbox" name="" id="">Dishwasher</li>
+                                <li><input type="checkbox" name="" id="">DVD</li>
+                                <li><input type="checkbox" name="" id="">Fan</li>
+                                <li><input type="checkbox" name="" id="">Fridge</li>
+                                <li><input type="checkbox" name="" id="">Grill</li>
+                                <li><input type="checkbox" name="" id="">Hairdryer</li>
+                                <li><input type="checkbox" name="" id="">Heating</li>
+                                <li><input type="checkbox" name="" id="">Hi-fi</li>
+                                <li><input type="checkbox" name="" id="">Internet</li>
+                                <li><input type="checkbox" name="" id="">Iron</li>
+                                <li><input type="checkbox" name="" id="">Juicer</li>
+                                <li><input type="checkbox" name="" id="">Lift</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            
+        </section>
+
+        <section id="main-content">
+            <div class="container">
+                <div class="content-heading row" >
+                    <div class="col-xs-12 col-sm-10">
+                        <div class="bread-crumb">
+                            <ul>
+                                <li>Home</li>
+                                <li> - Properties</li>
+                                <li> - Listing Grid View</li>
+                            </ul>
+
+                            <h3>Listing Grid</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-2">
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            <i class="fa-solid fa-list"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 col-md-pull-8">
+
+                        <div class="sidebar">
+                            <div class="calculator">
+                                <h4>Mortgage Calculator</h4>
+
+                                <form action="#">
+                                    <div class="form-gr">
+                                        <input type="text" class="form-control" placeholder="Property price">
+                                    </div>
+
+                                    <div class="form-gr">
+                                        <input type="text" class="form-control" placeholder="Deposit">
+                                    </div>
+
+                                    <div class="form-gr">
+                                        <input type="text" class="form-control" placeholder="Annual Interest">
+                                    </div>
+
+                                    <div class="form-gr">
+                                        <input type="text" class="form-control" placeholder="Years">
+                                    </div>
+
+                                    <button class="other-search-b">
+                                        <h4>SEARCH</h4>
+                                    </button>
+                                </form>
+
+                                <div class="allpay">
+                                    <span>Monthly Paymwnt: $969.04</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar">
+                            <div class="calculator">
+                                <h4>Recent Properties</h4>
+
+                                <div class="recent">
+                                    <div class="recent-item">
+                                        <img src="./assets/img/img22.jpg" alt="">
+
+                                        <div class="recent-item_property">
+                                            <h5>Villa on Hollywood</h5>
+                                            <span>$ 920,000</span>
+                                            <p>778 Country St. Panama City, FL</p>
+                                        </div>
+                                    </div>
+                                    <div class="recent-item">
+                                        <img src="./assets/img/img22.jpg" alt="">
+
+                                        <div class="recent-item_property">
+                                            <h5>Villa on Hollywood</h5>
+                                            <span>$ 920,000</span>
+                                            <p>778 Country St. Panama City, FL</p>
+                                        </div>
+                                    </div>
+                                    <div class="recent-item">
+                                        <img src="./assets/img/img22.jpg" alt="">
+
+                                        <div class="recent-item_property">
+                                            <h5>Villa on Hollywood</h5>
+                                            <span>$ 920,000</span>
+                                            <p>778 Country St. Panama City, FL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-8 col-md-push-4">
+                        <div class="main-content">
+                            <div class="header-content row">
+                                <div class="col-xs-12 col-md-8">
+                                    <ul class="list-select">
+                                        <li><a href="">All</a></li>
+                                        <li><a href="">For Rent</a></li>
+                                        <li><a href=""> For Sale</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="sort-gr">
+                                        <span>Sort by : </span>
+                                        <div class="order">
+                                            <button class="menu-click">
+                                                Default Order
+                                                <i class="fa-solid fa-angle-down"></i>
+
+                                            </button>
+                                            <ul class="menu-order">
+                                                <li><a href="">Default Order</a></li>
+                                                <li><a href="">Default Order</a></li>
+                                                <li><a href="">Default Order</a></li>
+                                                <li><a href="">Default Order</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="latest-content__item">
+                                    <div class="latest__item-img">
+                                        <img src="./assets/img/img04.jpg" alt="">
+                                        <div class="latest-favourite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>            
+    
+                                    <div class="latest__info">
+                                        <h5>Luxury Family Home</h5>
+                                        <div class="latest__info-address">
+                                            <i class="icon-place fa-solid fa-location-dot"></i>
+                                            <p>The Village, Jersey City, NJ 07302, USA</p>
+                                        </div>
+                                        <button class="btn-sale">
+                                            For Sale
+                                        </button>
+    
+                                        <h3>$ 490,000 <span> / monthly</span></h3>
+                                        <hr>
+                                        <ul class="latest__info-home">
+                                            <li>
+                                                <p>Area</p>
+                                                <span>2100 m2</span>
+                                            </li>
+                                            <li>
+                                                <p>Beds</p>
+                                                <span>3</span>
+                                            </li>
+                                            <li>
+                                                <p>Baths</p>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <p>Garages</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="latest-content__item">
+                                    <div class="latest__item-img">
+                                        <img src="./assets/img/img04.jpg" alt="">
+                                        <div class="latest-favourite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>            
+    
+                                    <div class="latest__info">
+                                        <h5>Luxury Family Home</h5>
+                                        <div class="latest__info-address">
+                                            <i class="icon-place fa-solid fa-location-dot"></i>
+                                            <p>The Village, Jersey City, NJ 07302, USA</p>
+                                        </div>
+                                        <button class="btn-sale">
+                                            For Sale
+                                        </button>
+    
+                                        <h3>$ 490,000 <span> / monthly</span></h3>
+                                        <hr>
+                                        <ul class="latest__info-home">
+                                            <li>
+                                                <p>Area</p>
+                                                <span>2100 m2</span>
+                                            </li>
+                                            <li>
+                                                <p>Beds</p>
+                                                <span>3</span>
+                                            </li>
+                                            <li>
+                                                <p>Baths</p>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <p>Garages</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="latest-content__item">
+                                    <div class="latest__item-img">
+                                        <img src="./assets/img/img04.jpg" alt="">
+                                        <div class="latest-favourite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>            
+    
+                                    <div class="latest__info">
+                                        <h5>Luxury Family Home</h5>
+                                        <div class="latest__info-address">
+                                            <i class="icon-place fa-solid fa-location-dot"></i>
+                                            <p>The Village, Jersey City, NJ 07302, USA</p>
+                                        </div>
+                                        <button class="btn-sale">
+                                            For Sale
+                                        </button>
+    
+                                        <h3>$ 490,000 <span> / monthly</span></h3>
+                                        <hr>
+                                        <ul class="latest__info-home">
+                                            <li>
+                                                <p>Area</p>
+                                                <span>2100 m2</span>
+                                            </li>
+                                            <li>
+                                                <p>Beds</p>
+                                                <span>3</span>
+                                            </li>
+                                            <li>
+                                                <p>Baths</p>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <p>Garages</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="latest-content__item">
+                                    <div class="latest__item-img">
+                                        <img src="./assets/img/img04.jpg" alt="">
+                                        <div class="latest-favourite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>            
+    
+                                    <div class="latest__info">
+                                        <h5>Luxury Family Home</h5>
+                                        <div class="latest__info-address">
+                                            <i class="icon-place fa-solid fa-location-dot"></i>
+                                            <p>The Village, Jersey City, NJ 07302, USA</p>
+                                        </div>
+                                        <button class="btn-sale">
+                                            For Sale
+                                        </button>
+    
+                                        <h3>$ 490,000 <span> / monthly</span></h3>
+                                        <hr>
+                                        <ul class="latest__info-home">
+                                            <li>
+                                                <p>Area</p>
+                                                <span>2100 m2</span>
+                                            </li>
+                                            <li>
+                                                <p>Beds</p>
+                                                <span>3</span>
+                                            </li>
+                                            <li>
+                                                <p>Baths</p>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <p>Garages</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="latest-content__item">
+                                    <div class="latest__item-img">
+                                        <img src="./assets/img/img04.jpg" alt="">
+                                        <div class="latest-favourite">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </div>            
+    
+                                    <div class="latest__info">
+                                        <h5>Luxury Family Home</h5>
+                                        <div class="latest__info-address">
+                                            <i class="icon-place fa-solid fa-location-dot"></i>
+                                            <p>The Village, Jersey City, NJ 07302, USA</p>
+                                        </div>
+                                        <button class="btn-sale">
+                                            For Sale
+                                        </button>
+    
+                                        <h3>$ 490,000 <span> / monthly</span></h3>
+                                        <hr>
+                                        <ul class="latest__info-home">
+                                            <li>
+                                                <p>Area</p>
+                                                <span>2100 m2</span>
+                                            </li>
+                                            <li>
+                                                <p>Beds</p>
+                                                <span>3</span>
+                                            </li>
+                                            <li>
+                                                <p>Baths</p>
+                                                <span>2</span>
+                                            </li>
+                                            <li>
+                                                <p>Garages</p>
+                                                <span>1</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="pagination">
+                                <button class="first-page">
+                                    Previous
+                                </button>
+
+                                <ul class="list-page">
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+
+                                    <span>...</span>
+                                    <li><a href="">22</a></li>
+                                </ul>
+
+                                <button class="next-page">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+        <section id="page-foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col">
+                        <h2 class="title-foot">LEMANHOUSE</h2>
+                        <p class="text-foot">Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.</p>
+                        <div class="foot-address">
+                            <ul>
+                                <li>
+                                <i class="fa-solid fa-location-arrow"></i>
+                                Collins Street West, Victoria 8007, Australia</li>
+                                <li><i class="fa-solid fa-blender-phone"></i>
+                                    <a href="">+1 234-567-8910</a></li>
+                                <li><i class="fa-regular fa-envelope"></i>
+                                    <a href="">info@homesweet.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ftNav -->
+                    <nav class="col-xs-12 col-sm-4 col">
+                        <h2 class="title-foot">USEFUL LINKS</h2>
+                        <div class="list-item">
+                            <div class="list-item__sb">
+                                <ul>
+                                    <li><a href="">Terms of Use</a></li>
+                                    <li><a href="">About US</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Contact Support</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">FAQs</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="list-item__ct">
+                                <ul>
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Our Agents</a></li>
+                                    <li><a href="">How It Works</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="col-xs-12 col-sm-4 col">
+                        <h2 class="title-foot">LATEST PROPERTIES
+                        </h2>
+
+                        <div class="pay-element">
+                            <img src="./assets/img/img22.jpg" alt="">
+                            <div class="info-pay">
+                                <span class="pay-title">Do what you love and tomorrow will pay</span>
+                                <span class="pay-money">$ 1,27,000</span>
+                            </div>
+                        </div>
+
+                        <div class="pay-element">
+                            <img src="./assets/img/img23.jpg" alt="">
+                            <div class="info-pay">
+                                <span class="pay-title">We're ready for the TRID rules!</span>
+                                <span class="pay-money">$ 527,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <span>2018 LemanHouse - All rights reserved</span>
+                    <ul class="list-icon__social">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-dribbble"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+        
+    </div>
+    <script>
+         // Slide toggle
+         $(document).ready(function() {
+            $('.other-feature__content').click(function() {
+                $('.other-feature__collapse').slideToggle();
+
+                var iconElement = $(this).find('.other-icon i');
+                    iconElement.toggleClass('fa-plus fa-minus');
+
+               
+            });
+        });
+
+        $(document).ready(function() {
+            $('.menu-click').click(function() {
+                $('.menu-order').toggleClass('active');
+            });
+        });
+        // button click
+
+
+    </script>
+        
+</body>
+
+</html>

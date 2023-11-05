@@ -242,6 +242,8 @@ header {
 }
 
 .logo__img {
+    width: 200px;
+    height: 40px;
     position: absolute;
     top: 50%; 
     transform: translateY(-50%);
@@ -716,6 +718,11 @@ header {
     margin: 20px 0;
 }
 
+.other-feature__collapse {
+    display: none;
+}
+
+
 .other-feature__collapse ul {
     display: flex;
     flex-wrap: wrap;
@@ -767,6 +774,7 @@ header {
 
 .latest-content {
     padding: 20px 0;
+    
 }
 
 
@@ -776,6 +784,11 @@ header {
 
 .latest__item-img {
     position: relative;
+}
+
+.latest__item-img img {
+    width: 100%;
+    height: 258px;
 }
 
 .latest-favourite {
@@ -908,6 +921,8 @@ header {
 
 .most-post__left img {
     transition: transform 0.3s;
+    width: 100%;
+    height: 450px;
 }
 
 .most-post__left:hover img {
@@ -971,10 +986,13 @@ header {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    width: 100%;
 }
 
 .most__img-top img {
     transition: transform 0.3s;
+    width: 100%;
+    height: 210px;
 }
 
 .most__img-top:hover img {
@@ -997,10 +1015,13 @@ header {
     position: relative;
     display: inline-block;
     overflow: hidden;
+
 }
 
 .most__img-double img {
     transition: transform 0.3s;
+    width: 100%;
+    height: 209px;
 }
 
 .most__img-double:hover img {
@@ -1127,11 +1148,13 @@ header {
 
 .our-agent__item {
     border: 1px solid #ccc;
-    
+    width: 100%;
+    margin: 0 10px;
 }
 
 .our-agent__item img {
     width: 100%;
+    height: 260px;
 }
 
 .info-agent {
@@ -1139,7 +1162,7 @@ header {
 }
 
 .info-social {
-    display: none; /* Mặc định ẩn info-social */
+   /* Mặc định ẩn info-social */
 }
 
 
@@ -1232,6 +1255,11 @@ header {
     position: relative;
 }
 
+.round-circle-sm img {
+    width: 100%;
+    height: 100%;
+}
+
 .round-circle-sm::before {
     content: "";
     position: absolute;
@@ -1295,6 +1323,8 @@ header {
 
 .new-story__item img {
     transition: transform 0.3s;
+    width: 100%;
+    height: 310px;
 }
 
 .new-story__item:hover img {
@@ -1429,6 +1459,7 @@ header {
     padding: 60px 0;
     background-color: #114a82;
     color: #fff;
+    position: relative;
 }
 
 .title-foot {
@@ -1502,7 +1533,8 @@ header {
 
 .pay-element img {
     margin-top: 30px;
-    height: 100%;
+    width: 88px;
+    height: 72px;
 }
 
 .info-pay {
@@ -1522,6 +1554,23 @@ header {
     font-weight: 500;
     margin-top: 4px;
 }
+
+.backtop {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    writing-mode: vertical-rl;
+    transform: translateY(-50%);
+}
+
+.backtop a {
+    text-decoration: none;
+}
+
+.backtop a:hover {
+    color: #ccc;
+}
+
 
 
 /* footer */

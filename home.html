@@ -128,40 +128,39 @@
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                         <ul class="subnav-home">
-                                            <li><a href="">Home page 1</a></li>
-                                            <li><a href="">Home page 2</a></li>
-                                            <li><a href="">Home page 3</a></li>
-                                            <li><a href="">Home page 4</a></li>
-                                            <li><a href="">Home page 5</a></li>
-                                            <li><a href="">Home page 6</a></li>
+                                            <li><a href="home.html">Home page 1</a></li>
+                                            <li><a href="home.html">Home page 2</a></li>
+                                            <li><a href="house-list.html">House list 1</a></li>
+                                            <li><a href="house-list.html">House list 2</a></li>
+                                            <li><a href="house-list.html">House list 3</a></li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="">
-                                            Properties
+                                            Agent
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                         <ul class="subnav-pro">
-                                            <li><a href="">Home page 1</a></li>
-                                            <li><a href="">Home page 2</a></li>
-                                            <li><a href="">Home page 3</a></li>
-                                            <li><a href="">Home page 4</a></li>
-                                            <li><a href="">Home page 5</a></li>
-                                            <li><a href="">Home page 6</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li><li>
+                                                <a href="agent-list.html">Agent list</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li>
+                                            <li><a href="agent-list.html">Agent list</a></li>
+
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="">
-                                            Pages
+                                            About
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                         <ul class="subnav-page">
-                                            <li><a href="">Home page 1</a></li>
-                                            <li><a href="">Home page 2</a></li>
-                                            <li><a href="">Home page 3</a></li>
-                                            <li><a href="">Home page 4</a></li>
-                                            <li><a href="">Home page 5</a></li>
-                                            <li><a href="">Home page 6</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -170,12 +169,12 @@
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                         <ul class="subnav-blog">
-                                            <li><a href="">Home page 1</a></li>
-                                            <li><a href="">Home page 2</a></li>
-                                            <li><a href="">Home page 3</a></li>
-                                            <li><a href="">Home page 4</a></li>
-                                            <li><a href="">Home page 5</a></li>
-                                            <li><a href="">Home page 6</a></li>
+                                            <li><a href="blog.html">Blog 1</a></li>
+                                            <li><a href="blog.html">Blog 2</a></li>
+                                            <li><a href="blog.html">Blog 3</a></li>
+                                            <li><a href="blog.html">Blog 4</a></li>
+                                            <li><a href="blog.html">Blog 5</a></li>
+                                            <li><a href="blog.html">Blog 6</a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -1145,6 +1144,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="backtop">
+                <a href="#">
+                    <i class="fa-solid fa-arrow-up-long"></i>
+                    <span>Scroll Top </span>
+                </a>
+            </div>
         </section>
 
         <footer>
@@ -1221,56 +1227,6 @@
         });
 
 
-        //slider show
-        
-        $(document).ready(function() {
-            $(".our-agent__item").hover(
-                function() {
-                    $(this).find(".info-social").slideDown(500);
-                },
-                function() {
-                    $(this).find(".info-social").slideUp(500);
-                }
-            );
-        });
-        
-        //slide OUR TESTIMONIALS
-        $(document).ready(function() {
-            var slider = $(".slider");
-            var images = slider.find(".bg-img");
-            var currentIndex = 0;
-            var imageWidth = images.first().width();
-            
-            function slideToNextImage() {
-                currentIndex++;
-                if (currentIndex >= images.length) {
-                    currentIndex = 0;
-                }
-              
-                slider.animate({
-                    scrollLeft: imageWidth * currentIndex
-                }, 500); // Thời gian trượt slide (có thể thay đổi thời gian theo ý muốn)
-            }
-            
-            function slideToPreviousImage() {
-                currentIndex--;
-                if (currentIndex < 0) {
-                    currentIndex = images.length - 1;
-                }
-              
-                slider.animate({
-                    scrollLeft: imageWidth * currentIndex
-                }, 500); // Thời gian trượt slide (có thể thay đổi thời gian theo ý muốn)
-            }
-            
-            $(".btn-slider-right").click(function() {
-                slideToNextImage();
-            });
-            
-            $(".btn-slider-left").click(function() {
-                slideToPreviousImage();
-            });
-        });
         
     </script>
 </body>
